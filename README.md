@@ -1,49 +1,42 @@
 
-# Face2Comic
-
-Use pixel2style2pixel for generating comic images from faces photos.
-
+# ImageRecomendatiom
+Image recomendation system base on image description using an autoencoder architecture with convolutional neural networks (CNN).
 
 
-## Content
 
-- **pixel2style2pixel**: Clone of the pSp StyleGAN project
-- **pretrained_models**: Folder for the weights of pretrained StyleGAN and IR-SE50. The IR-SE50 is used in our ID loss during pSp training.
-- **Notebook_Face2Comic**: Colab Notebook for download the original pSp repository and the comic dataset for training.
-## Required changes
+## Main architecture
 
-You need to define the paths of your data source, in the /pixel2style2pixel/configs/paths_config.py file.
+The used architecture was an Autoencoder, we will use it to generate a lower dimension latent vector that corresponds with the image description of a clothe.
 
-Define the location of the pretrained models and both the source and target dataset.
+Each low dimension representation of an image will be used as its description, the we will compare these descriptors to recommend similar images.
+## Content of the repository
 
-***IMPORTANT***
+- **Autoencoder_UNet.ipynb**: Jupyter notebook with the main code used for training the CNNs and plotting the different results.
+- **GeneracionBinarioDataset.ipynb**: Jupyter notebook with the code used for generating the binary of the dataset.
+- **Results_XXXdim**: Folder with the results of the training for an Autoencoder with a latent vector of XXX dimensions.
+## Code
 
-Download the [FFHQ StyleGAN weights](https://drive.google.com/file/d/1EM87UquaoQmk17Q8d5kYIAHqu0dkYqdT/view) and [IR-SE50 Model](https://drive.google.com/file/d/1KW7bjndL3QG3sxBbZxreGHigcCCpsDgn/view) inside the /pretrained_models folder
-## Deployment
+Each code Notebook is self explained. To execute the different trainings we used Google Colaboratory with Google Drive for loading the binary file and saving the output plots of each training.
+## Results
 
-To train the model execute the following command
+Below we will show the results of the main architecture that we used, that was the one that had 3 latent dimensions.
 
-```bash
-python scripts/train.py \
---dataset_type=face2comic \
---exp_dir={Log output path} \
---workers=8 \
---batch_size={Adapt to the processing power} \
---test_batch_size=8 \
---test_workers=8 \
---val_interval=2500 \
---save_interval=5000 \
---encoder_type=GradualStyleEncoder \
---start_from_latent_avg \
---lpips_lambda=0.8 \
---l2_lambda=1 \
---id_lambda=1 \
---w_norm_lambda=0.025 \
-```
+### Reconstruction of the images
 
-For more training options, check /pixel2style2pixel/options folder.
+Below it is presented the evolution of the reconstruction of test images.
 
-If you wish to resume from a specific checkpoint (e.g. a pretrained pSp model), you may do so using --checkpoint_path.
+![3dim_evolution](https://github.com/guillermoiglesiashernandez/ImageRecomendation/blob/master/Imgs/3dim-Evolution.gif?raw=true)
+## Dataset
+
+The dataset [Fashion Product Images Dataset](https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset) was used for the training of the networks was obtained from Kaggle, it contains approximately 44200 different images of clothes. Besides it cointains the different tags for differentiate each type of clothe we will not use them, because the objective of the work is to do an unsupervised learning.
+
+### Dataset binary generation
+
+First we tried to download and charge each time the whole dataset from Kaggle, but this operation was very slow because each image was treated individually.
+
+Then we tried to save a .zip file with the content of the dataset an download it for each training, this process was also very slow and consumed too much time.
+
+Finally we decided to generate a binary file that could be efficiently loaded, the generation of this file is described in _GeneracionBinarioDataset.ipynb_ file.
 ## Acknowledgements
 
- - [Original pSp StyleGAN repository](https://github.com/eladrich/pixel2style2pixel)
+ - [Fashion Dataset used for the training](https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset)
