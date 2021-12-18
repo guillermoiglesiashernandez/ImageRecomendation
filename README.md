@@ -25,17 +25,17 @@ Below we will show the results of the main architecture that we used, that was t
 
 Below it is presented the evolution of the reconstruction of test images.
 
-![3dim_evolution](https://github.com/guillermoiglesiashernandez/ImageRecomendation/Imgs/3dim-Evolution.gif?raw=true)
+![3dim_evolution](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/3dim-Evolution.gif)
 
 ### Losses of the training
 
-![losses](https://github.com/guillermoiglesiashernandez/ImageRecomendation/Imgs/losses.png?raw=true)
+![losses](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/losses.png)
 
 ### Representation of the latent space
 
 Because the latent dimension is 3, we can plot how the images are distributed in a three dimensional space.
 
-![points_generated](https://github.com/guillermoiglesiashernandez/ImageRecomendation/Imgs/PointsGenerated.png?raw=true)
+![points_generated](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/PointsGenerated.png)
 
 # Recomendation system
 
@@ -45,15 +45,15 @@ Below are presented the results of different methods for recommending similar im
 
 The clustering method used was KMeans with 6 clusters. The clusters are displayed below.
 
-![clusters_generated](https://github.com/guillermoiglesiashernandez/ImageRecomendation/Imgs/ClustersGenerated.png?raw=true)
+![clusters_generated](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/ClustersGenerated.png)
 
 The recomendation based on these clusters is the following.
 
-![recomendation_euclidean](https://github.com/guillermoiglesiashernandez/ImageRecomendation/Imgs/recomendation_clusters_results.png?raw=true)
+![recomendation_euclidean](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/recomendation_clusters_results.png)
 
 ### Recomendation using euclidean distance
 
-![recomendation_euclidean](https://github.com/guillermoiglesiashernandez/ImageRecomendation/Imgs/nearest_neigbor_results.png?raw=true)
+![recomendation_euclidean](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_neigbor_results.png)
 
 ## Dataset
 
