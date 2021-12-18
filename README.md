@@ -53,7 +53,7 @@ The recomendation based on these clusters is the following.
 
 ### Recomendation using euclidean distance
 
-![recomendation_euclidean](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_neigbor_results.png)
+![recomendation_euclidean](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_neighbor_results.png)
 
 ## Dataset
 
