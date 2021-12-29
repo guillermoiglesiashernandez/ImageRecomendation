@@ -55,11 +55,11 @@ The recomendation based on these clusters is the following.
 
 ### Recomendation using euclidean distance
 
-![recomendation_euclidean1](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_5neighbor_results1.png)
-![recomendation_euclidean2](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_5neighbor_results2.png)
-![recomendation_euclidean3](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_5neighbor_results3.png)
-![recomendation_euclidean4](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_5neighbor_results4.png)
-![recomendation_euclidean5](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_5neighbor_results5.png)
+![recomendation_euclidean1](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_5neighbors_results1.png)
+![recomendation_euclidean2](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_5neighbors_results2.png)
+![recomendation_euclidean3](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_5neighbors_results3.png)
+![recomendation_euclidean4](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_5neighbors_results4.png)
+![recomendation_euclidean5](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_5neighbors_results5.png)
 
 ## Dataset
 
