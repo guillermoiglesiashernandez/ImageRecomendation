@@ -25,7 +25,7 @@ Below we will show the results of the main architecture that we used, that was t
 
 Below it is presented the evolution of the reconstruction of test images.
 
-![3dim_evolution](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/3dim-Evolution.gif)
+![3dim_evolution](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/10dim-Evolution.gif)
 
 ![dim_comparison](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/Dimension-Comparison.png)
 
@@ -55,7 +55,11 @@ The recomendation based on these clusters is the following.
 
 ### Recomendation using euclidean distance
 
-![recomendation_euclidean](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_neighbor_results.png)
+![recomendation_euclidean1](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_neighbor_results1.png)
+![recomendation_euclidean2](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_neighbor_results2.png)
+![recomendation_euclidean3](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_neighbor_results3.png)
+![recomendation_euclidean4](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_neighbor_results4.png)
+![recomendation_euclidean5](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/nearest_neighbor_results5.png)
 
 ## Dataset
 
