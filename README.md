@@ -25,7 +25,7 @@ Below we will show the results of the main architecture that we used, that was t
 
 Below it is presented the evolution of the reconstruction of test images.
 
-![3dim_evolution](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/10dim-Evolution.gif)
+![10dim_evolution](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/10dim-Evolution.gif)
 
 ![dim_comparison](https://raw.githubusercontent.com/guillermoiglesiashernandez/ImageRecomendation/master/Imgs/Dimension-Comparison.png)
 
