@@ -11,8 +11,9 @@ The used architecture was an Autoencoder, we will use it to generate a lower dim
 Each low dimension representation of an image will be used as its description, the we will compare these descriptors to recommend similar images.
 ## Content of the repository
 
-- **Autoencoder_UNet.ipynb**: Jupyter notebook with the main code used for training the CNNs and plotting the different results.
+- **Autoencoder_Xception.ipynb**: Jupyter notebook with the main code used for training the CNNs and plotting the different results.
 - **GeneracionBinarioDataset.ipynb**: Jupyter notebook with the code used for generating the binary of the dataset.
+- **GenerateImages**: Code for loading the saved models and generating graphics.
 - **Results_XXXdim**: Folder with the results of the training for an Autoencoder with a latent vector of XXX dimensions.
 ## Code
 
